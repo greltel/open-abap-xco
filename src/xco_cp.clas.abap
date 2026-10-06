@@ -37,6 +37,7 @@ CLASS xco_cp IMPLEMENTATION.
 
   METHOD class_constructor.
     xco_cp=>sy = NEW cl_xco_cp_std_sy( ).
+    xco_cp=>current = NEW cl_xco_cp_std_current( ).
   ENDMETHOD.
 
   METHOD message.
